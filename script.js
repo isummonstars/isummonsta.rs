@@ -68,12 +68,6 @@ function hexToRgb(hex) {
   return { r: r, g: g, b: b };
 }
 
-isummonstars.addEventListener('click', function () {
-  if (isMobile) {
-    changeColor();
-  }
-});
-
 isummonstars.addEventListener('mouseover', function () {
   if (!isMobile) {
     changeColor();
