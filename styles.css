@@ -38,9 +38,15 @@ body {
   margin: 0;
   user-select: none;
   transition: font-size 0.5s, text-shadow 0.5s;
+  cursor: pointer; /* Add cursor pointer for tap interaction */
 }
 
 #isummonstars:hover {
+  font-size: 70px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+#isummonstars.tap {
   font-size: 70px;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
@@ -58,14 +64,11 @@ body {
 @media (max-width: 768px) {
   /* Mobile-specific styles */
   #isummonstars {
-    font-size: 45px;
+    font-size: 40px;
   }
   
   #isummonstars:hover {
-    font-size: 50px;
-  }
-
-  .coming-soon {
-    font-size: 18px;
+    font-size: 40px; /* Adjust hover font size on mobile */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
   }
 }
