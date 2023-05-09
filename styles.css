@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Discopia';
+  src: url('fonts/Discopia-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nova Mono';
+  src: url('fonts/NovaMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #090909;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Prevent overflow */
+}
+
+#isummonstars {
+  font-family: 'Discopia', sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  margin: 0;
+  user-select: none;
+  transition: font-size 0.5s, text-shadow 0.5s;
+}
+
+#isummonstars:hover {
+  font-size: 70px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.coming-soon {
+  font-family: 'Nova Mono', monospace;
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  text-transform: lowercase;
+  user-select: none; /* Make text unselectable */
+}
+
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  #isummonstars {
+    font-size: 45px;
+  }
+  
+  #isummonstars:hover {
+    font-size: 50px;
+  }
+
+  .coming-soon {
+    font-size: 18px;
+  }
+}
