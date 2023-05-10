@@ -39,6 +39,7 @@ body {
   user-select: none;
   transition: font-size 0.5s, text-shadow 0.5s;
   cursor: pointer; /* Add cursor pointer for tap interaction */
+  transform: translateY(-80px);
 }
 
 #isummonstars:hover {
@@ -51,14 +52,43 @@ body {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
-.coming-soon {
-  font-family: 'Nova Mono', monospace;
-  font-size: 24px;
-  color: white;
-  margin-top: 10px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-  text-transform: lowercase;
-  user-select: none; /* Make text unselectable */
+#youtube:hover > svg {
+  fill:red;
+  filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.8));
+
+}
+#twitter:hover > svg {
+  fill: #1da1f2;
+  filter: drop-shadow(0 0 5px rgba(29, 161, 242, 0.8));
+}
+#instagram:hover > svg {
+  fill: #fa7e1e;
+  filter: drop-shadow(0 0 5px rgba(250, 126, 30, 0.8));
+}
+#tiktok:hover > svg {
+  fill: #fe2858;
+  filter: drop-shadow(0 0 5px rgba(254, 40, 88, 0.8));
+}
+#discord:hover > svg {
+  fill: #7289d9;
+  filter: drop-shadow(0 0 5px rgba(114, 137, 217, 0.8));
+}
+
+svg {
+  width: 75px;
+  fill: white;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+  margin: 25px;
+  transition: 0.3s;
+    
+}
+
+.svgcontainer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: translateY(60px);
+
 }
 
 @media (max-width: 768px) {
