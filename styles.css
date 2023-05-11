@@ -52,19 +52,31 @@ body {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
+#spotify:hover > svg {
+  fill: #1DB954;
+  filter: drop-shadow(0 0 5px rgba(29, 185, 84, 0.8));
+}
+
+#soundcloud:hover > svg {
+  fill: #FF3300;
+  filter: drop-shadow(0 0 5px rgba(255, 51, 0, 0.8));
+}
+
 #youtube:hover > svg {
   fill:red;
   filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.8));
-
 }
+
 #twitter:hover > svg {
   fill: #1da1f2;
   filter: drop-shadow(0 0 5px rgba(29, 161, 242, 0.8));
 }
+
 #instagram:hover > svg {
   fill: #fa7e1e;
   filter: drop-shadow(0 0 5px rgba(250, 126, 30, 0.8));
 }
+
 #tiktok:hover > svg {
   fill: #fe2858;
   filter: drop-shadow(0 0 5px rgba(254, 40, 88, 0.8));
@@ -90,6 +102,7 @@ svg {
   transform: translateY(60px);
 
 }
+
 
 @media (max-width: 768px) {
   /* Mobile-specific styles */
